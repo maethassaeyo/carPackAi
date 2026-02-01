@@ -30,4 +30,4 @@
 ```bash
 git clone [https://github.com/maethassaeyo/carParkAi.git](https://github.com/maethassaeyo/carParkAi.git)
 cd carParkAi
-pip install opencv-python numpy
+pip install opencv-python numpy flask
