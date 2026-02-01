@@ -21,9 +21,9 @@ net = cv2.dnn.readNetFromCaffe(
     "./MobileNetSSD/MobileNetSSD.caffemodel"
 )
 # เลือกวิดีโอ/เปิดกล้อง
-IP = "10.190.25.158"
+IP = "192.168.0.107"
 URL = 'rtsp://admin:URGHJA@'+IP+':554/h264_stream'
-#URL = './vdo/4.mp4'
+URL = './vdo/4.mp4'
 
 numcar = 0
 
@@ -59,7 +59,7 @@ def gen_frames():
     while True:
         
         ret, frame = cap.read()
-        #frame = cv2.resize(frame,(2000,800))
+        frame = cv2.resize(frame,(2000,800))
         if not ret or frame is None:
             print("⚠️ Frame read failed — skipping...")
             fail_count += 1
